@@ -1,7 +1,7 @@
 
 CXX = g++
 
-CXXFLAGS = -std=c++14 -Wall -Wextra -Werror
+CXXFLAGS = -std=c++17 -Wall -Wextra -Werror
 
 
 TARGET = task_4_4

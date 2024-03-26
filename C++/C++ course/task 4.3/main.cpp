@@ -1,7 +1,8 @@
 #include "Car.h"
 #include <iostream>
 
-int main() {
+int main() 
+{
   Car car;
 
   car.setPrice(200);

@@ -1,14 +1,12 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     int number, sum = 0;
     while(true)
     {
-        cout << "Enter the number" << endl;
-        cin >> number;
+        std::cout << "Enter the number" << std::endl;
+        std::cin >> number;
         if (number >= 0)
         {
          sum += number;
@@ -17,6 +15,8 @@ int main()
         {
          break;
         }
-        cout << "Sum is:" << sum << endl;
+        std::cout << "Sum is:" << sum << std::endl;
     }
+
+    return 0;
 }

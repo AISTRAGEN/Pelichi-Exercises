@@ -1,14 +1,12 @@
 #include "Car.h"
 #include <iostream>
 
-using namespace std;
-
-string Car::getModel() 
+std::string Car::getModel() 
 {
     return m_Model;
 }
 
-void Car::setModel(const string &_model) 
+void Car::setModel(const std::string &_model) 
 {
     m_Model = _model;
 }
@@ -63,15 +61,15 @@ void Car::setCurrentFuelVolume(double _CurrentFuelVolume)
     m_CurrentFuelVolume = _CurrentFuelVolume;
 }
 
-string Car::toString() {
-    string result = "Model:" + m_Model +  ", YearOfProduction:" + to_string(m_YearOfProduction)  + ", Price:" + to_string(m_Price) + ", TankVolume:" +
-          to_string(m_TankVolume) + ", CurrentFuelVolume:" + to_string(m_CurrentFuelVolume) + ", Color:" + to_string(static_cast<int>(m_color));
+std::string Car::toString() {
+    std::string result = "Model:" + m_Model +  ", YearOfProduction:" + std::to_string(m_YearOfProduction)  + ", Price:" + std::to_string(m_Price) + ", TankVolume:" +
+          std::to_string(m_TankVolume) + ", CurrentFuelVolume:" + std::to_string(m_CurrentFuelVolume) + ", Color:" + std::to_string(static_cast<int>(m_color));
     return result;
 }
 
-pair<bool, double> Car::canDrive(unsigned int _distance) 
+std::pair<bool, double> Car::canDrive(unsigned int _distance) 
 {
-    pair<bool, double> result;
+    std::pair<bool, double> result;
     result.second = _distance / 20.0;
     result.first = m_CurrentFuelVolume - result.second >= 0;
     return result;
@@ -82,11 +80,11 @@ void Car::refuel(unsigned int volume)
     if (m_CurrentFuelVolume + volume <= m_TankVolume) 
     {
         m_CurrentFuelVolume += volume;
-        cout << "додано об'єм " << volume << endl;
+        std::cout << "додано об'єм " << volume << std::endl;
     } 
     else 
     {
-        cout << "У вас недостатньо об'єму палива" << endl;
+        std::cout << "У вас недостатньо об'єму палива" << std::endl;
     }
 }
 
@@ -95,14 +93,15 @@ void Car::refuel(unsigned int volume, unsigned int price)
   if (m_CurrentFuelVolume + volume <= m_TankVolume && volume <= price)
   {
     m_CurrentFuelVolume += volume;
-    cout << "додано об'єм " << volume << endl;
+    std::cout << "додано об'єм " << volume << std::endl;
   }
   else
   {
-    cout << "У вас недостатньо об'єму палива" << endl;
+    std::cout << "У вас недостатньо об'єму палива" << std::endl;
   }
 }
 
-bool Car::isTankFull() {
+bool Car::isTankFull() 
+{
     return m_CurrentFuelVolume == m_TankVolume;
 }

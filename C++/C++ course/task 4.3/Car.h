@@ -1,5 +1,3 @@
-
-
 #ifndef INC_4_3_CAR_H
 #define INC_4_3_CAR_H
 
@@ -9,15 +7,19 @@
 #define INC_4_2P_CAR_H
 #include <iostream>
 #include <string>
-using namespace std;
 
-class Car {
+
+class Car 
+{
 public:
-  enum class Color { WHITE, BLACK, YELLOW, GREEN };
+  enum class Color 
+  { 
+    WHITE, BLACK, YELLOW, GREEN 
+  };
 
 public:
-  string getModel();
-  void setModel(const string &_model);
+  std::string getModel();
+  void setModel(const std::string &_model);
 
   unsigned int getYearOfProduction();
   void setYearOfProduction(unsigned int _YearOfProduction);
@@ -34,15 +36,15 @@ public:
   Color getColor();
   void setColor(Color _color);
 
-  string toString();
-  pair<bool, double> canDrive(unsigned int distance);
+  std::string toString();
+  std::pair<bool, double> canDrive(unsigned int distance);
 
   void refuel(unsigned int volume);
 
   bool isTankFull();
 
 private:
-  string m_Model;
+  std::string m_Model;
   unsigned int m_YearOfProduction;
   Color m_color;
   int m_Price;

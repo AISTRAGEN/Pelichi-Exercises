@@ -5,8 +5,6 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
 class Car 
 {
 public:
@@ -18,8 +16,8 @@ public:
         GREEN
     };
 
-    string getModel();
-    void setModel(const string& _model);
+    std::string getModel();
+    void setModel(const std::string& _model);
 
     unsigned int getYearOfProduction();
     void setYearOfProduction(unsigned int _YearOfProduction);
@@ -36,8 +34,8 @@ public:
     Color getColor();
     void setColor(Color _color);
 
-    string toString();
-    pair<bool, double> canDrive(unsigned int distance);
+    std::string toString();
+    std::pair<bool, double> canDrive(unsigned int distance);
 
     void refuel(unsigned int volume);
     void refuel(unsigned int volume, unsigned int price);
@@ -45,7 +43,7 @@ public:
     bool isTankFull();
 
 private:
-    string m_Model;
+    std::string m_Model;
     unsigned int m_YearOfProduction;
     Color m_color;
     int m_Price;

@@ -1,17 +1,17 @@
 ﻿
 #include <iostream>
 
-using namespace std;
-
-int main() {
+int main() 
+{
   const double pi = 3.14159;
 
   double R;
 
-  cout << "Enter Radius:" << endl;
-  cin >> R;
+  std::cout << "Enter Radius:" << std::endl;
+  std::cin >> R;
   double S = pi * (R * R);
 
-  cout << "Result"
-       << " " << S << endl;
+  std::cout << "Result" << " " << S << std::endl;
+  
+  return 0;
 }

@@ -1,42 +1,38 @@
 #include <iostream>
 
-using namespace std;
 // взагалі код клепав на швидку руку, як буде час то спробую його скоротити.
 int main()
 {
     // обчислення відстані s = v*t
-
     int v;
-    cout << "Enter speed (v)" << endl;
-    cin >> v;
+    std::cout << "Enter speed (v)" << std::endl;
+    std::cin >> v;
     int t = 0;
-    cout << "Enter time (t)" << endl;
-    cin >> t;
+    std::cout << "Enter time (t)" << std::endl;
+    std::cin >> t;
     int s = v * t;
 
     //Обчислення  m = (x+y)/2
-
     int x, y;
-    cout << "Enter x" << endl;
-    cin >> x;
-    cout << "Enter y" << endl;
-    cin >> y;
+    std::cout << "Enter x" << std::endl;
+    std::cin >> x;
+    std::cout << "Enter y" << std::endl;
+    std::cin >> y;
     int m = (x + y) / 2.0;
 
     // Обчислення дискримінанту d = b^2 -4ac
-
     int a, b, c;
-    cout << "Enter the value a > 0" << endl; // тут просто порахувати не треба робити тернарним оператором чи if else
-    cin >> a;
-    cout << "Enter the value b" << endl;
-    cin >> b;
-    cout << "Enter the value c" << endl;
-    cin >> c;
+    std::cout << "Enter the value a > 0" << std::endl; // тут просто порахувати не треба робити тернарним оператором чи if else
+    std::cin >> a;
+    std::cout << "Enter the value b" << std::endl;
+    std::cin >> b;
+    std::cout << "Enter the value c" << std::endl;
+    std::cin >> c;
     int d = (b * b) - 4 * (a * c);
 
-    cout << "value (s)" << s << endl;
-    cout << "value (m)" << m << endl;
-    cout << "value (d)" << d << endl;
+    std::cout << "value (s)" << s << std::endl;
+    std::cout << "value (m)" << m << std::endl;
+    std::cout << "value (d)" << d << std::endl;
 
     return 0;
 }

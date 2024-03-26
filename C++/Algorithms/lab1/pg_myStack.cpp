@@ -66,33 +66,72 @@ int main()
   stack.size = 0;
 
   std::cout << "Ця програма показує як працює стек" << std::endl;
-  std::cout << "Запишіть елементи в стек" << std::endl;
+  int number;
 
-  for (int i = 0; i < max_size; i++)
-   {
-    int value;
+  do 
+  {
+    std::cout << "\nМеню:" << std::endl;
+        std::cout << "1. Додати елементи до стеку" << std::endl;
+        std::cout << "2. Видалити елементи зі стеку" << std::endl;
+        std::cout << "3. Вивести стек" << std::endl;
+        std::cout << "0. Вийти з програми" << std::endl;
+        std::cin >> number;
+
+switch (number)
+{
+case 1:
+std::cout << "Введіть елементи в стек (максимальний розмір):" << max_size << std::endl;
+std::cout << "Для того аби закінчити вивід просто напишіть 'y' " << std::endl;
+
+  for(int i = 0; i < max_size; ++i)
+  {
+    std::string input;
     std::cout << "Елемент " << i + 1 << ": ";
-    std::cin >> value;
-    pushSt(&stack, value);
+    std::cin >> input;
+    if(input == "y")
+    {
+      break;
+    }
+    else
+    {
+      int value = std::stoi(input);
+      pushSt(&stack, value);
+    }
   }
+  break;
 
-  std::cout << "Тепер напишіть скільки елементів ви хочете взяти зі стеку" << std::endl;
-  int popElements;
-  std::cin >> popElements;
+case 2:
+int popElements;
+std::cout << "Введіть скільки елементів ви хочете видалити зі стеку" << std::endl;
+std::cin >> popElements;
 
-  std::cout << "Ваш стек виглядає ось так:" << std::endl;
-  printStack(&stack, printStackValue);
-  std::cout << std::endl;
+for(int i = 0; i < popElements; ++i)
+{
+ popSt(&stack);
+}
+break;
 
-  for (int i = 0; i < popElements; ++i)
-   {
-    popSt(&stack);
-    std::cout << "Стек після вилучення " << i + 1 << " елементу: " << std::endl;
-    int topValue = peekSt(&stack);
-    printStack(&stack, printStackValue);
-    std::cout << " - Значення верхнього елемента після операції: " << topValue << std::endl;
-    std::cout << std::endl;
+case 3:
+printStack(&stack, printStackValue);
+break;
+
+case 4:
+peekSt(&stack);
+break;
+
+case 0:
+std::cout << "Вихід з програми" << std::endl;
+exit(0);
+break;
+
+default:
+std::cout << "Невірний вибір, спробуйте ще раз" << std::endl;
+  break;
+}
   }
-
-  return 0;
+  while(number != 0);
+  {
+   return 0;
+  }
+  
 }

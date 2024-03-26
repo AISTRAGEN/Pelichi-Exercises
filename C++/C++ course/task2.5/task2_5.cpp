@@ -1,37 +1,38 @@
 #include <iostream>
 
-using namespace std;
-
-int main() {
+int main() 
+{
   int number;
-  cout << "Enter the number" << endl;
-  cin >> number;
+  std::cout << "Enter the number" << std::endl;
+  std::cin >> number;
 
-  switch (number) {
+  switch (number) 
+  {
   case 1:
-    cout << "Monday" << endl;
+    std::cout << "Monday" << std::endl;
     break;
   case 2:
-    cout << "Tuesday" << endl;
+    std::cout << "Tuesday" << std::endl;
     break;
   case 3:
-    cout << "Wednesday" << endl;
+    std::cout << "Wednesday" << std::endl;
     break;
   case 4:
-    cout << "Thursday" << endl;
+    std::cout << "Thursday" << std::endl;
     break;
   case 5:
-    cout << "Friday" << endl;
+    std::cout << "Friday" << std::endl;
     break;
   case 6:
-    cout << "Saturday" << endl;
+    std::cout << "Saturday" << std::endl;
     break;
   case 7:
-    cout << "Sunday" << endl;
+    std::cout << "Sunday" << std::endl;
     break;
   default:
-    cout << "Bad input" << endl;
+    std::cout << "Bad input" << std::endl;
     break;
   }
+  
   return 0;
 }
