@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
