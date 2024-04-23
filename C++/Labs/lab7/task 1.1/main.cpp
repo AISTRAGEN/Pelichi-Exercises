@@ -1,6 +1,20 @@
 #include "header.h"
 
-double function(double x, double n)
+int n;
+
+void inputData(int&a,int& b, int& h)
+{
+ std::cout << "Введіть значення a(min):" << std::endl;
+ std::cin >> a;
+ std::cout << "Введіть значення b(max):" << std::endl;
+ std::cin >> b;
+ std::cout << "Введіть значення n:" << std::endl;
+ std::cin >> n;
+ std::cout << "Введіть значення h(крок)" << std::endl;
+ std::cin >> h;
+}
+
+double function(double x)
 {
     double y;
     if (x < 0) 
@@ -33,22 +47,9 @@ double function(double x, double n)
 
 int main()
 {
-    int a, b, h, n;
-    inputData(a, b, h, n);
-
-    if (n > 2 && a < b && h > 0) 
-    {
-        for (double x = a; x <= b; x += h) 
-        {
-            double y = function(x, n);
-            std::cout << "If x = " << x << "    y = " << y << std::endl;
-        }
-        std::cout << "Program is ended" <<std::endl;
-        return 0;
-    }
-    else
-    {
-        std::cout << "Error" << std::endl;
-        return 1;
-    } 
+    int a, b, h;
+    inputData(a, b, h);
+   outputData(a, b, h, function);
+   
+   return 0;
 }
