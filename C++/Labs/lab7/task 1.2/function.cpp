@@ -11,18 +11,18 @@ double findDerivative(int a, int b, int h)
 
         if (derivative == 0.0)
         {
-            return x; // Знайдено значення x, при якому похідна дорівнює нулю.
+            return x; 
         }
     }
 
-    return -1; // Похідна не дорівнює нулю для жодного x.
+    return -1;
 }
 
 double outputData(funcPtr funcPtr, int a, int b, int h)
 {
     for (int x = a; x < b; x += h)
     {
-        double result = funcPtr(x, x + h, 1); // Виклик функції через вказівник
+        double result = funcPtr(x, x + h, 1); 
         if (result == 0.0)
         {
             std::cout << "At x = " << x << ", y = 0" << std::endl;
@@ -31,19 +31,3 @@ double outputData(funcPtr funcPtr, int a, int b, int h)
 
     return 0;
 }
-
-
-
-//double y = 3 * (x * x) + 1;
-//  for(double x = 0; x != 0; --x)
-//  {
-//  double y = 3 * (x * x) + 1;
-//  if(y == 0)
-//  {
-//   return y;
-//  }
-//  else
-//  {
-//    continue;
-//  }
-//  }

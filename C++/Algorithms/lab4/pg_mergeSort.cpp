@@ -22,16 +22,19 @@ void merge(int start, int end, int mid, int list[])
         }
     }
 
+    // Додаємо залишок першого підмасиву, якщо він є
     while (i <= mid)
     {
         mergedList[k++] = list[i++];
     }
 
+    // Додаємо залишок другого підмасиву, якщо він є
     while (j <= end)
     {
         mergedList[k++] = list[j++];
     }
     
+    // Копіюємо відсортовані значення з mergedList назад в основний масив list
     for (int i = start; i <= end; ++i)
     {
         list[i] = mergedList[i];
