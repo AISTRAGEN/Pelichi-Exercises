@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <signal.h>
 #include <unistd.h>
+#include <signal.h>
 #include <syslog.h>
 #include <sys/types.h>
 #include <sys/resource.h>
@@ -17,17 +17,18 @@ void user_input(int signum)
         case SIGINT: 
             syslog(LOG_NOTICE, "Отримано сигнал SIGINT, демон завершений\n");
             closelog();
+            exit(0);
             break;
     }
 }
 
 int main() 
 {
-
     pid_t pid = fork();
 
-    if (pid < 0) {
-        printf("Помилка при створенні процесу");
+    if (pid < 0) 
+    {
+        printf("Помилка при створенні процесу\n");
         exit(-1);
     } 
     
@@ -36,30 +37,26 @@ int main()
         printf("Демон запущений з PID: %d\n", pid);
         exit(0);
     }
-    setsid();
-  
-    chdir("/");
 
+    setsid();
+    chdir("/");
  
-    struct rlimit flim;
-    getrlimit(RLIMIT_NOFILE, &flim);
-    for (int fd = 0; fd < flim.rlim_max; fd++) 
+    struct rlimit file_limits;
+    getrlimit(RLIMIT_NOFILE, &file_limits);
+    for (int fd = 0; fd < file_limits.rlim_max; fd++) 
     {
         close(fd);
     }
 
-
     openlog("my_daemon", LOG_PID, LOG_DAEMON);
-
-  
     syslog(LOG_NOTICE, "Демон запущено, очікування сигналу:");
 
     signal(SIGUSR1, user_input);
     signal(SIGINT, user_input);
 
-
-    kill(pid, SIGUSR1);
-    kill(pid, SIGINT);
+    while (1) {
+        sleep(1);
+    }
 
     return 0;
 }
