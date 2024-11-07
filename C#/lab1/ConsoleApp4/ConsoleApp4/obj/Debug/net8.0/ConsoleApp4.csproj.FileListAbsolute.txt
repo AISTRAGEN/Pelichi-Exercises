@@ -1,0 +1,15 @@
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/bin/Debug/net8.0/ConsoleApp4
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/bin/Debug/net8.0/ConsoleApp4.deps.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/bin/Debug/net8.0/ConsoleApp4.runtimeconfig.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/bin/Debug/net8.0/ConsoleApp4.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/bin/Debug/net8.0/ConsoleApp4.pdb
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.AssemblyInfoInputs.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.AssemblyInfo.cs
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.csproj.CoreCompileInputs.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.sourcelink.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/refint/ConsoleApp4.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.pdb
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ConsoleApp4.genruntimeconfig.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp4/ConsoleApp4/obj/Debug/net8.0/ref/ConsoleApp4.dll

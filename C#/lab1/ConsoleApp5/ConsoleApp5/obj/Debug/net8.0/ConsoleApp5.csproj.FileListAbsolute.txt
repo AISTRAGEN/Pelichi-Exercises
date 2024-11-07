@@ -1,0 +1,15 @@
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/bin/Debug/net8.0/ConsoleApp5
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/bin/Debug/net8.0/ConsoleApp5.deps.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/bin/Debug/net8.0/ConsoleApp5.runtimeconfig.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/bin/Debug/net8.0/ConsoleApp5.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/bin/Debug/net8.0/ConsoleApp5.pdb
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.GeneratedMSBuildEditorConfig.editorconfig
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.AssemblyInfoInputs.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.AssemblyInfo.cs
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.csproj.CoreCompileInputs.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.sourcelink.json
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/refint/ConsoleApp5.dll
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.pdb
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ConsoleApp5.genruntimeconfig.cache
+/home/pelichi/Документы/Pelichi-Developing/C#/lab1/ConsoleApp5/ConsoleApp5/obj/Debug/net8.0/ref/ConsoleApp5.dll
